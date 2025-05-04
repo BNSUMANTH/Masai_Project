@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             try {
                 const userCredentials=await createUserWithEmailAndPassword(auth,email,password)
                 await setDoc(doc(db,"users",userCredentials.user.uid),{email,role})
-                window.location.href="index.html"
+                window.location.href="../index.html"
             } catch (error) {
                 document.getElementById("signup-message").innerHTML=error.message;
             }
