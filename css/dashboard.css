@@ -1,0 +1,111 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  #logoutBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  #title, #message, #mediaFile, #unlockDate {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #message {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  input[type="file"] {
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #2ecc71;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  #capsule-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #capsule-list li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #capsule-list li h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  #capsule-list li p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  #capsule-list li .unlock-date {
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
