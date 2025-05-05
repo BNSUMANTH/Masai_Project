@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             const role=document.getElementById("role").value;
             try {
                 const userCredentials=await createUserWithEmailAndPassword(auth,email,password)
+                const user_id1 =userCredentials.user.uid;
                 await setDoc(doc(db,"users",userCredentials.user.uid),{email,role})
                 window.location.href="../index.html"
             } catch (error) {

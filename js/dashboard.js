@@ -26,6 +26,7 @@ async function createCapsule(event) {
   const message = document.getElementById('message').value;
   const unlockDate = document.getElementById('unlockDate').value;
   const file = document.getElementById('mediaFile').files[0];
+  // const user_id=;
   console.log(file);
   let filePath = null;
   if (file) {
